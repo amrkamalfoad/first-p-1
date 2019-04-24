@@ -232,6 +232,8 @@ transition:2s;
 .six:hover{
  transition:2s;
  background:orange;
+ box-shadow: 0 500px 500px 0 grey;
+ color:white;
 }
 .sa{
 text-align:center;
@@ -253,6 +255,8 @@ transition:2s;
 .seven:hover{
  transition:2s;
  background:orange;
+ box-shadow: 0 500px 500px 0 grey;
+ color:white;
 }
 .eight{
   background:beige;
@@ -269,6 +273,8 @@ transition:2s;
 .eight:hover{
  transition:2s;
  background:orange;
+ box-shadow: 0 500px 500px 0 grey;
+ color:white;
 }
 .desctitle{
  font-size:17px;
@@ -280,11 +286,17 @@ transition:2s;
  text-decoration:underline;
  text-indent:-10%;
 }
+.desctitle:hover{
+ color:white;
+}
 .list{
  font-size:18px;
  color:black;
  margin-left:-30%;
  font-family:fantasy;
+}
+.list:hover{
+ color:white;
 }
 .nine{
  background:#f0ffff;
@@ -305,42 +317,61 @@ transition:2s;
 }
 
 .reservebutton{
- background:grey;
+ 
  
  box-shadow: 0 2px 10px 0;
-   opacity:0.8;
-   color:white;
+   opacity:0.7;
+   color:black;
    font-weight:bold;
+   padding:10px;
    text-transform:capitalize;
-   background:grey;
-   width:80%;
+   width:40%;
+   background-color:orange;
+   margin-left:20%;
+  transition-duration: 0.4s;
+}
+.reservebutton:hover{
+  transition:0.4s;
+  color:black;
+  background:skyblue;
 }
 
+
 .table3{
- width:90%;
+ width:100%;
  margin-top:3%;
- margin-left:5%;
  transition:4s;
- background:#f0ffff;
+ background:url('p8.jpg');
+ background-position:center;
+ background-size:cover;
+ padding:80px;
+   box-shadow: 0 2px 50px 0 ;
+ 
 }
 .tabledata3{
  
  background:beige;
- border:25px solid;
- border-color:#f0ffff;
- padding-top:20px;
- padding-left:30px;
- width:5%;
+ margin-left:20%;
+ padding-top:13px;
+ padding-left:20px;
  font-family:fantasy;
  font-size:20px;
  text-transform:capitalize;
- border-radius:50px;
- background-image: linear-gradient(-180deg,beige,orange 90%);
- 
+ border-collapse:collapse;
+  border: 10px double orange;
+ opacity:0.8;
+  transition:0.2s;
+}
+.tabledata3:hover{
+ transition:1s;
+ background:#fff;
+
 }
 img{
  border-radius:10px;
   transition:2s;
+  margin-left:18%;
+  border:2px solid  orange;
 }
 img:hover{
  transition:2s;
@@ -352,9 +383,16 @@ img:hover{
  font-size:30px;
  color:grey;
  width:80%;
- border-bottom:1px solid white;
+ 
+ border-bottom:1px solid orange;
 }
-
+.fifthp{
+ text-transform:capitalize;
+ font-size:20px;
+}
+.secspan{
+ font-size:30px;
+}
 
 
     </style>
@@ -458,29 +496,29 @@ img:hover{
           <tr class="tablerow3">
            <td class="tabledata3">
          
-          <img src="p1.jpg"alt="hotel"width="90%"height="200">
-          <h1 class="thirdh"><i class="fa fa-hotel"style="margin-left:5%;margin-right:2%;"></i>oyo 118 dallas hotel</h1>
+          <img src="p12.jpg"alt="hotel"width="60%"height="200">
+          <h1 class="thirdh"><i class="fa fa-hotel"style="margin-left:5%;margin-right:2%;"></i> istanbul hotel <i class="fa fa-wifi" style="margin-left:3%;font-size:20px"></i> <i class="fab fa-cc-visa" style="margin-left:3%;font-size:20px"></i></h1>
           <P>luxury <i class="fa fa-star"style="margin-left:10%"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> </P>
           <P>rooms <i class="fa fa-star"style="margin-left:10%"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></P>
-         <P ><button class="reservebutton">book now</button></p>
+           <P class="fifthp"  ><span class="secspan">600</span><i class="fa fa-pound-sign"></i> per night<button class="reservebutton"><i class="fa fa-handshake" style="font-size:20px"></i> book now</button></p>
            </td>
        <td class="tabledata3">
          
-            <img src="p3.jpg"alt="hotel"width="90%"height="200px">
-          <h1 class="thirdh"><i class="fa fa-hotel"style="margin-left:5%;margin-right:2%;"></i> brazil cetral hotel</h1>
+            <img src="p14.jpg"alt="hotel"width="60%"height="200px">
+           <h1 class="thirdh"><i class="fa fa-hotel"style="margin-left:5%;margin-right:2%;"></i>paris luxury <i class="fa fa-table-tennis" style="margin-left:3%;font-size:20px"></i> <i class="fas fa-glass-martini-alt" style="margin-left:3%;font-size:20px"></i></h1>
           <P>luxury<i class="fa fa-star"style="margin-left:10%"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> </P>
           <P>rooms <i class="fa fa-star"style="margin-left:10%"></i><i class="fa fa-star"></i></P>
-         <P > <button class="reservebutton">book now</button></p>
+           <P class="fifthp"  ><span class="secspan">200</span><i class="fa fa-pound-sign"></i> per night<button class="reservebutton"><i class="fa fa-handshake" style="font-size:20px"></i> book now</button></p>
           
          
        </td>
        <td class="tabledata3">
          
-            <img src="p2.jpg"alt="hotel"width="90%"height="200px">
-          <h1 class="thirdh"><i class="fa fa-hotel"style="margin-left:5%;margin-right:2%;"></i> london luxury hotel</h1>
+            <img src="p10.jpg"alt="hotel"width="60%"height="200px">
+           <h1 class="thirdh"><i class="fa fa-hotel"style="margin-left:5%;margin-right:2%;"></i>london  hotel <i class="fa fa-skiing" style="margin-left:2%;font-size:20px"></i> <i class="fas fa-volleyball-ball" style="margin-left:2%;font-size:20px"></i></h1>
           <P>luxury </i> <i class="fa fa-star"style="margin-left:10%"></i><i class="fa fa-star"></i> </P>
           <P>rooms <i class="fa fa-star"style="margin-left:10%"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </P>
-         <P > <button class="reservebutton">book now</button></p>
+         <P class="fifthp"  ><span class="secspan">100</span><i class="fa fa-pound-sign"></i> per night<button class="reservebutton"><i class="fa fa-handshake" style="font-size:20px"></i> book now</button></p>
        
        </td>
         </div>
